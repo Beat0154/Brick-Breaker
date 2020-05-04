@@ -19,9 +19,8 @@ function whilemousedownLeft() {
 }
 document.getElementById("left").addEventListener("mousedown", mousedownLeft);
 document.getElementById("left").addEventListener("mouseup", mouseupLeft);
-
-
-
+document.getElementById("left").addEventListener("ontouchstart", mousedownLeft);
+document.getElementById("left").addEventListener("ontouchend", mouseupLeft);
 
 var mousedownID = -1; 
 function mousedownRight(event) {
@@ -44,17 +43,8 @@ function whilemousedownRight() {
 }
 document.getElementById("right").addEventListener("mousedown", mousedownRight);
 document.getElementById("right").addEventListener("mouseup", mouseupRight);
-
-//function keyDown(event){
-//    if(event.keyCode == '37'){
-//        mousedownLeft();
-//    }
-//    if(event.keyCode == '39'){
-//        mousedownRight();
-//    }
-//}
-//document.addEventListener("keydown", keydown);
-
+document.getElementById("right").addEventListener("ontouchstart", mousedownRight);
+document.getElementById("right").addEventListener("ontouchend", mouseupRight);
 
 document.addEventListener("keydown", event => {
   if (event.isComposing || event.keyCode === 229) {
