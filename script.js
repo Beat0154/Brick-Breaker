@@ -23,8 +23,8 @@ function whilemousedownLeft() {
 }
 document.getElementById("left").addEventListener("mousedown", mousedownLeft);
 document.getElementById("left").addEventListener("mouseup", mouseupLeft);
-document.getElementById("left").addEventListener("ontouchstart", mousedownLeft);
-document.getElementById("left").addEventListener("ontouchend", mouseupLeft);
+document.getElementById("left").addEventListener("touchstart", mousedownLeft);
+document.getElementById("left").addEventListener("touchend", mouseupLeft);
 
 function mousedownRight(event) {
   if(mousedownID==-1)mousedownID = setInterval(whilemousedownRight, 2);
@@ -45,8 +45,8 @@ function whilemousedownRight() {
 }
 document.getElementById("right").addEventListener("mousedown", mousedownRight);
 document.getElementById("right").addEventListener("mouseup", mouseupRight);
-document.getElementById("right").addEventListener("ontouchstart", mousedownRight);
-document.getElementById("right").addEventListener("ontouchend", mouseupRight);
+document.getElementById("right").addEventListener("touchstart", mousedownRight);
+document.getElementById("right").addEventListener("touchend", mouseupRight);
 
 document.addEventListener("keydown", event => {
   if (event.isComposing || event.keyCode === 229) {
@@ -87,4 +87,4 @@ var checkHit = setInterval(function() {
 //    balldiv.style.animation = "slideX 1.1s infinite linear";
 //    var newball = ballleft + px;
 //    ball.style.left = newball;
-}, 4999);
+}, 5000);
