@@ -88,3 +88,13 @@ var checkHit = setInterval(function() {
 //    var newball = ballleft + px;
 //    ball.style.left = newball;
 }, 5000);
+
+if(window.innerWidth<400){
+    var fourhundred = window.innerWidth;
+    var fourhundredminustwenty = window.innerWidth - 20;
+    var fourhundredhalf = window.innerWidth / 2;
+    
+    root.style.setProperty('--fourhundred', fourhundred + "px");
+    root.style.setProperty('--fourhundredminustwenty', fourhundredminustwenty + "px");
+    root.style.setProperty('--fourhundred', fourhundredhalf + "px");
+}

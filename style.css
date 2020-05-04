@@ -1,3 +1,8 @@
+:root{
+    --fourhundred: 400px;
+    --fourhundredminustwenty: 380px;
+    --fourhundredhalf: 200px;
+}
 *{
     padding: 0;
     margin: 0;
@@ -6,7 +11,7 @@
 .game{
     border: 3px solid black;
     height: 400px;
-    max-width: 400px;
+    width: var(--fourhundred);
     margin: auto;
 }
 .user{
@@ -29,7 +34,7 @@
     animation:slideY 5s infinite linear;
 }
 .balldiv{
-    width: 400px;
+    width: var(--fourhundred);
     height: 380px;
     position: relative;
     margin: auto;
@@ -37,7 +42,7 @@
 }
 @keyframes slideX{
     0%{left:0px;}
-    50%{left:380px;}
+    50%{left:var(--fourhundredminustwenty);}
     100%{left:0px;}
 }
 @keyframes slideY{
@@ -47,13 +52,13 @@
 }
 .left{
     z-index: 100;
-    width: 200px;
+    width: var(--fourhundredhalf);
     position: absolute;
     height: 400px;
 }
 .right{
     z-index: 100;
-    width: 200px;
+    width: var(--fourhundredhalf);
     margin-left: 200px;
     position: absolute;
     height: 400px;
