@@ -13,18 +13,61 @@
     background-color: red;
     width: 100px;
     height: 20px;
-    top: 380px;
+/*    top: 380px;*/
     left: 150px;
     position: relative;
 }
+.ball{
+    width: 20px;
+    height: 20px;
+    background-color: darkred;
+    border-radius: 50%;
+    position: relative;
+    top:360px;
+}
+.animation{
+    animation:slideY 5s infinite linear;
+}
+.balldiv{
+    width: 400px;
+    height: 380px;
+    position: relative;
+    margin: auto;
+    animation:slideX 1.2345s infinite linear;
+}
+@keyframes slideX{
+    0%{left:0px;}
+    50%{left:380px;}
+    100%{left:0px;}
+}
+@keyframes slideY{
+    0%{top:360px;}
+    50%{top:0px;}
+    100%{top:360px;}
+}
 .left{
+    z-index: 100;
     width: 200px;
     position: absolute;
     height: 400px;
 }
 .right{
+    z-index: 100;
     width: 200px;
     margin-left: 200px;
     position: absolute;
     height: 400px;
+}
+button{
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    border: 3px solid black;
+    border-radius: 0.3rem;
+    margin: 1rem auto;
+    display: none;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
