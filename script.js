@@ -17,10 +17,10 @@ function whilemousedownLeft() {
         user.style.left = newnewleft;
     }
 }
-document.getElementById("left").addEventListener("mousedown", mousedownLeft);
-document.getElementById("left").addEventListener("mouseup", mouseupLeft);
-document.getElementById("left").addEventListener("ontouchstart", mousedownLeft);
-document.getElementById("left").addEventListener("ontouchend", mouseupLeft);
+//document.getElementById("left").addEventListener("mousedown", mousedownLeft);
+//document.getElementById("left").addEventListener("mouseup", mouseupLeft);
+document.getElementById("left").addEventListener("onpointerdown", mousedownLeft);
+document.getElementById("left").addEventListener("onpointerup", mouseupLeft);
 
 var mousedownID = -1; 
 function mousedownRight(event) {
@@ -41,10 +41,10 @@ function whilemousedownRight() {
         user.style.left = newnewleft;
     }
 }
-document.getElementById("right").addEventListener("mousedown", mousedownRight);
-document.getElementById("right").addEventListener("mouseup", mouseupRight);
-document.getElementById("right").addEventListener("ontouchstart", mousedownRight);
-document.getElementById("right").addEventListener("ontouchend", mouseupRight);
+//document.getElementById("right").addEventListener("mousedown", mousedownRight);
+//document.getElementById("right").addEventListener("mouseup", mouseupRight);
+document.getElementById("right").addEventListener("onpointerdown", mousedownRight);
+document.getElementById("right").addEventListener("onpointerup", mouseupRight);
 
 document.addEventListener("keydown", event => {
   if (event.isComposing || event.keyCode === 229) {
