@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.game{
+    border: 3px solid black;
+    height: 400px;
+    max-width: 400px;
+    margin: auto;
+}
+.user{
+    background-color: red;
+    width: 100px;
+    height: 20px;
+    top: 380px;
+    left: 150px;
+    position: relative;
+}
+.left{
+    width: 200px;
+    position: absolute;
+    height: 400px;
+/*    background-color: yellow;*/
+}
+.right{
+    width: 200px;
+    margin-left: 200px;
+    position: absolute;
+    height: 400px;
+}
