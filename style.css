@@ -76,3 +76,20 @@ button:hover{
     color: white;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 399px){
+   .game,.left,.right{
+        height: 400px;
+    } 
+    @keyframes slideY{
+        0%{top:360px;}
+        50%{top:0px;}
+        100%{top:360px;}
+    }
+    .ball{
+        top:360px;
+    }
+    .balldiv{
+        height: 380px;
+    }
+}
