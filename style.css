@@ -10,7 +10,7 @@
 }
 .game{
     border: 3px solid black;
-    height: 400px;
+    height: 600px;
     width: var(--fourhundred);
     margin: auto;
 }
@@ -28,17 +28,17 @@
     background-color: darkred;
     border-radius: 50%;
     position: relative;
-    top:360px;
+    top:560px;
 }
 .animation{
     animation:slideY 5s infinite linear;
 }
 .balldiv{
     width: var(--fourhundred);
-    height: 380px;
+    height: 580px;
     position: relative;
     margin: auto;
-    animation:slideX 1.2345s infinite linear;
+    animation:slideX 1.0284s infinite linear;
 }
 @keyframes slideX{
     0%{left:0px;}
@@ -46,22 +46,22 @@
     100%{left:0px;}
 }
 @keyframes slideY{
-    0%{top:360px;}
+    0%{top:560px;}
     50%{top:0px;}
-    100%{top:360px;}
+    100%{top:560px;}
 }
 .left{
     z-index: 100;
     width: var(--fourhundredhalf);
     position: absolute;
-    height: 400px;
+    height: 600px;
 }
 .right{
     z-index: 100;
     width: var(--fourhundredhalf);
     margin-left: 200px;
     position: absolute;
-    height: 400px;
+    height: 600px;
 }
 button{
     font-size: 2rem;
