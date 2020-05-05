@@ -83,10 +83,6 @@ var checkHit = setInterval(function() {
         clearInterval(checkHit);
         restart.style.display = "block";
     }
-//    ball.style.animation = "slideY 5s infinite linear";
-//    balldiv.style.animation = "slideX 1.1s infinite linear";
-//    var newball = ballleft + px;
-//    ball.style.left = newball;
 }, 5000);
 
 if(window.innerWidth<400){
